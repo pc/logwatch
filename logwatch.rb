@@ -53,7 +53,7 @@ class LogWatch
     m.to = @to
     m.from = @from
     m.body = diff
-    m.subject = "Change in #{path}"
+    m.subject = "Change in #{thing}"
     m.date = Time.now
 
     Net::SMTP.start('localhost', 25) {|cli| cli.send_message(m.to_s, @from, @to)}
