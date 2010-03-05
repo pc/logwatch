@@ -1,5 +1,5 @@
 Usage:
 
 ./logwatch.rb /var/log/foo.log joesmith@gmail.com
-./logwatch '!tail -1000 /var/log/foo.log | grep something-interesting' joesmith@gmail.com
+./logwatch.rb '!tail -1000 /var/log/foo.log | grep something-interesting' joesmith@gmail.com
 
