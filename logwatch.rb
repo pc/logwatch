@@ -81,7 +81,7 @@ class LogWatch
         end
       end
       
-      sleep 5
+      sleep (@cmd ? 30 : 5) # cmds are more expensive, generally
     end
   end
 end
